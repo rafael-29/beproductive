@@ -63,6 +63,15 @@ return  allBooks.map(book => (
 ))
 }
 
+
+const renderEmpty = () => (
+<div className="empty-book">
+    <h2 className="eb-h">create a book to start</h2>
+    <button onClick={() => setAddWindow(!addWindow)} 
+    className="eb-btn">create</button>
+</div>
+)
+
 useEffect( () => {
 fetchUserNotes()
 }, [])
@@ -74,13 +83,13 @@ return(
     </div>
     
     <button onClick={() => setAddWindow(true)}
-        className="dt-create">Create New Book <i className="dtbtn fas fa-plus-circle"></i>
+        className={allBooks === undefined ? "hide-menu" : !allBooks.length ? "hide-menu" : "dt-create"}>Create New Book <i className="dtbtn fas fa-plus-circle"></i>
     </button>
     
 
 
     <div className="notebook-inside-page">
-    {allBooks === undefined ? <h3 className="load-undef">Loading ...</h3> : renderAllBooks()}
+    {allBooks === undefined ? <h3 className="load-undef">Loading ...</h3> : !allBooks.length ? renderEmpty() : renderAllBooks()}
     </div>
 
 

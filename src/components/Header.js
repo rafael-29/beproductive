@@ -7,11 +7,12 @@ const history = useHistory()
 const [showTaskMenu, setShowTaskMenu] = useState(false)
 const [settingsMenu, setSettingsMenu] = useState(false)
 
-const showProfileMenu = e => {
-setShowTaskMenu(!showTaskMenu)
-if(settingsMenu){
-    setSettingsMenu(false)
-}
+const [mobOpen, setMobOpen] = useState(false)
+
+const mobomenuActive = () => {
+
+setMobOpen(!mobOpen)
+    
 }
 
 const logOutFunc = () => {
@@ -24,9 +25,6 @@ setSettingsMenu(false)
 const renderNormalMenu = () => (
 <React.Fragment>
     <li className="header-li">
-        <Link to="/" className="header-link">Home</Link>
-    </li>
-    <li className="header-li">
         <Link to="/register" className="header-link">Sign in</Link>
     </li>
 </React.Fragment>
@@ -35,28 +33,24 @@ const renderNormalMenu = () => (
 const rProfileMenu = () => (
 <React.Fragment>
     <li className="header-li">
-        <button onClick={showProfileMenu}
-         className="profile-btn">Tasks</button>
-        <ul className={showTaskMenu ? 'show-task-menu' : 'hide-menu'}>
-            <li onClick={() => {
+        <button onClick={() => {
                 history.push('/dailytasks')
-                setShowTaskMenu(false)
+                setMobOpen(false)
             }}
-             className="profile-li">DailyTask</li>
-            <li className="profile-li">TodayTask</li>
-        </ul>
+         className="profile-btn">Tasks</button>
     </li>
     <li className="header-li">
-        <button onClick={() => history.push('/notebooks')}
+        <button onClick={() => {
+        history.push('/notebooks')
+        setMobOpen(false)
+    }}
          className="profile-btn">Notebook</button>
         
     </li>
     <li className="header-li">
         <button onClick={() => {
             setSettingsMenu(!settingsMenu)
-            if(showTaskMenu){
-                setShowTaskMenu(false)
-            }
+            setMobOpen(false)
         }}
          className="profile-btn">Settings</button>
         <ul className={settingsMenu ? 'show-settings-menu' : 'hide-menu'}>
@@ -65,6 +59,14 @@ const rProfileMenu = () => (
              className="profile-li">Log Out</li>
         </ul>
     </li>
+</React.Fragment>
+)
+
+const rProfileMobo = () => (
+<React.Fragment>
+<div className={!mobOpen ? "mobo-box": "mobo-box-open"} onClick={mobomenuActive}>
+    <div className="mobobx-line"></div>
+</div>
 </React.Fragment>
 )
 
@@ -78,6 +80,54 @@ className="logo-name">{user ? user.result.fullname.charAt(0).toUpperCase()+user.
 <ul className="header-ul">
     {user ? rProfileMenu() : renderNormalMenu()}
 </ul>
+
+<ul className="header-ul-mobile">
+    {user ? rProfileMobo() : renderNormalMenu()}
+</ul>
+
+
+
+
+<div className={ mobOpen ? "mobo-down-menu" : "mobo-left-menu"}>
+    <div className="mb-centerbx">
+        <li className="header-li-mobo">
+        <button onClick={() => {
+                history.push('/dailytasks')
+                setMobOpen(false)
+            }}
+            className="profile-btn-mobo">Tasks</button>
+        </li>
+        <li className="header-li-mobo">
+        <button onClick={() => {
+            history.push('/notebooks')
+            setMobOpen(false)
+            }}
+            className="profile-btn-mobo">Notebook</button>
+        </li>
+        
+        <li className="header-li-mobo">
+        <button onClick={() => {
+        setMobOpen(false)
+        }}
+            className="profile-btn-mobo">Settings</button>
+
+        </li>
+        <li className="header-li-mobo">
+        <button onClick={() => {
+            setMobOpen(false)
+        }}
+        className="profile-btn-mobo">Accounts</button>
+        </li>
+        <li className="header-li-mobo">
+        <button onClick={() => {
+            logOutFunc()
+            setMobOpen(false)
+        }}
+            className="profile-btn-mobo">Sign Out</button>
+        </li>
+    </div>
+</div>
+
 </header>
 )
 }
