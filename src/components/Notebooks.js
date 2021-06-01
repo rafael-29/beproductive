@@ -95,7 +95,7 @@ return(
 
     <div className={addWindow ? "newtask-form-cont" : "hide-menu"}>
         <div className="newtask-form">
-            <h4 className="dt-label">Create New</h4>
+            <h4 className="dt-label">Create Book</h4>
             <TextField onChange={(e) => setNoteBookName(e.target.value)} value={noteBookName}
             size="small" label="Your Book Name"
              color="secondary" variant="outlined" style={{

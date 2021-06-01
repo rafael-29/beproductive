@@ -69,7 +69,7 @@ const renderNotes = () => {
         
         </div>
         <button onClick={() => setAddWindow(!addWindow)}
-        className="addnew-txt">Create New <i className="bp-plus fas fa-plus-circle"></i></button>
+        className="addnew-txt">Create New<i className="bp-plus fas fa-plus-circle"></i></button>
         </React.Fragment>
     )
 }

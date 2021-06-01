@@ -945,6 +945,14 @@ footer .copyright {
   }
 }
 
+.err-message {
+  margin-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+  color: #fd0054;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
 .signin-page {
   height: 90vh;
   display: -webkit-box;
@@ -967,7 +975,7 @@ footer .copyright {
 .register-ttle {
   font-family: "Montserrat", sans-serif;
   font-size: 2.1rem;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   color: #34222e;
 }
 
@@ -1300,6 +1308,13 @@ header {
           flex-direction: column;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+.mobo-logo {
+  width: 70px;
+  top: 17px;
+  left: 16px;
+  position: absolute;
 }
 
 .mobo-left-menu {

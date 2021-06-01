@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {Link, useHistory} from 'react-router-dom'
 
 const Header = ({user, setUser}) => {
@@ -71,7 +71,14 @@ const rProfileMobo = () => (
 )
 
 
-
+useEffect( () => {
+let theWhole = window.document.querySelector('body')
+if(!mobOpen){
+theWhole.style.overflow = "scroll"
+}else{
+theWhole.style.overflow = "hidden"
+}
+}, [mobOpen])
 return (
 <header className={user ? '' : 'headerBig'}>
 <h2 onClick={e => history.push('/')} style={{cursor: 'pointer'}}
@@ -89,6 +96,7 @@ className="logo-name">{user ? user.result.fullname.charAt(0).toUpperCase()+user.
 
 
 <div className={ mobOpen ? "mobo-down-menu" : "mobo-left-menu"}>
+<img src="./images/myicon.png" alt="beproductive app" className="mobo-logo" />
     <div className="mb-centerbx">
         <li className="header-li-mobo">
         <button onClick={() => {
