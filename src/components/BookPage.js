@@ -7,7 +7,7 @@ import axios from 'axios'
 const BookPage = ({theprops}) => {
 
 const API = axios.create({
-baseURL: 'http://localhost:8080/notes'
+baseURL: 'https://beproductive-api.herokuapp.com/notes'
 })
 API.interceptors.request.use( (req) => {
 

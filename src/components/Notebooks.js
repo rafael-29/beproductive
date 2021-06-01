@@ -16,7 +16,7 @@ const [loadWhenCheck, setLoadWhenCheck] = useState(false)
 const [noteBookName, setNoteBookName] = useState('')
 
 const API = axios.create({
-    baseURL: 'http://localhost:8080/notes'
+    baseURL: 'https://beproductive-api.herokuapp.com/notes'
 })
 API.interceptors.request.use( (req) => {
 req.headers.authori = `belat ${JSON.parse(localStorage.getItem('profile')).token}`

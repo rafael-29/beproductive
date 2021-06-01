@@ -1,6 +1,5 @@
 import React from 'react'
-import Header from './Header'
-import {Typography, Container} from '@material-ui/core'
+
 
 
 import Profile from './Profile'

@@ -11,7 +11,7 @@ const [addWindow, setAddWindow] = useState(false)
 const [dtName, setDtName] = useState('')
 
 const API = axios.create({
-baseURL: 'http://localhost:8080/tasks'
+baseURL: 'https://beproductive-api.herokuapp.com/tasks'
 })
 
 API.interceptors.request.use( (req) => {

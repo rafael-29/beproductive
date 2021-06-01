@@ -9,7 +9,7 @@ import axios from 'axios'
 const Signin = ({user, setUser}) => {
 const history = useHistory()
 const normAPI = axios.create({
-baseURL: 'http://localhost:8080'
+baseURL: 'https://beproductive-api.herokuapp.com'
 })
 
 const [sign, setSign] = useState(true)
