@@ -35,7 +35,7 @@ font-family: $exple;
 font-weight: 400;
 }
 .orig-home{
-padding: 120px 80px 50px 80px;
+padding: 120px 80px 90px 80px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -171,12 +171,12 @@ opacity: .9;
 @media(max-width: 700px){
 
 .orig-home{
-padding: 100px 20px 50px 20px;
+padding: 120px 20px 100px 20px;
+
 }
 .oh-top{
 width: 240px;
 }
-
 .ohbot-h{
 font-family: $mons;
 font-weight: 800;
@@ -286,21 +286,7 @@ font-size: 2rem;
 margin-bottom: 10px;
 color: $fourth;
 }
-.profile-left{
-padding-top: 30px;
-}
-.image-kunyare{
-height: 170px;
-width: 170px;
-border-radius: 8px;
-background-color: $third;
 
-}
-.task-captions{
-font-family: $mons;
-font-size: 1.3rem;
-margin-bottom: 5px;
-}
 .profile-right{
 height: auto;
 padding: 50px 40px;
@@ -336,7 +322,12 @@ border-radius: 15px;
 transition: .3s;
 margin-bottom: 10px;
 }
-
+@media (max-width: 800px) {
+.profile-body{
+flex-wrap: wrap;
+padding: 100px 20px;
+}
+}
 
 /// DAILY TASKS CHECKBOX
 .daily-container{
@@ -671,7 +662,7 @@ outline: none;
 font-family: $robotothin;
 font-size: 1.2rem;
 }
-
+// INSIDE NOTES BOOKPAGE
 .thenotes-container{
 padding-top: 50px;
 
@@ -709,6 +700,69 @@ opacity: .8;
 }
 .addnew-txt:active{
 opacity: .6;
+}
+
+@media(max-width: 840px){
+
+// Bookpage
+.bookcontent-page{
+padding: 60px 20px;
+}
+
+.eb-btn{
+padding: 9px 0;
+width: 200px;
+font-size: 1.6rem;
+font-family: $mons;
+font-weight: 600;
+background-color: $second;
+color: white;
+border: none;
+border-radius: 8px;
+outline: none;
+cursor: pointer;
+}
+.eb-btn:hover{
+opacity: .8;
+}
+.eb-btn:active{
+opacity: .5;
+}
+
+.bp-txtfield{
+width: 100%;
+padding: 10px;
+height: 120px;
+background: none;
+color: $fourth;
+font-size: 1.3rem;
+font-family: $robotothin;
+outline: none;
+}
+.bp-txtfield::placeholder{
+font-family: $robotothin;
+font-size: 1.2rem;
+}
+// INSIDE NOTES BOOKPAGE
+.thenotes-container{
+padding-top: 30px;
+
+}
+.notebx{
+margin-bottom: 30px;
+}
+.note-ttle{
+font-family: $robotothin;
+font-size: 1.5rem;
+color: $fourth;
+}
+.note-p{
+font-family: $mons;
+font-size: 1.1rem;
+color: $third;
+font-weight: 800;
+}
+
 }
 
 

@@ -19,7 +19,7 @@ body {
 }
 
 .orig-home {
-  padding: 120px 80px 50px 80px;
+  padding: 120px 80px 90px 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,7 +183,7 @@ footer .copyright {
 
 @media (max-width: 700px) {
   .orig-home {
-    padding: 100px 20px 50px 20px;
+    padding: 120px 20px 100px 20px;
   }
   .oh-top {
     width: 240px;
@@ -306,23 +306,6 @@ footer .copyright {
   color: #34222e;
 }
 
-.profile-left {
-  padding-top: 30px;
-}
-
-.image-kunyare {
-  height: 170px;
-  width: 170px;
-  border-radius: 8px;
-  background-color: #3e3636;
-}
-
-.task-captions {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.3rem;
-  margin-bottom: 5px;
-}
-
 .profile-right {
   height: auto;
   padding: 50px 40px;
@@ -379,6 +362,14 @@ footer .copyright {
   -webkit-transition: .3s;
   transition: .3s;
   margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .profile-body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 100px 20px;
+  }
 }
 
 .daily-container {
@@ -868,6 +859,74 @@ footer .copyright {
 
 .addnew-txt:active {
   opacity: .6;
+}
+
+@media (max-width: 840px) {
+  .bookcontent-page {
+    padding: 60px 20px;
+  }
+  .eb-btn {
+    padding: 9px 0;
+    width: 200px;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background-color: #e2434b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+  }
+  .eb-btn:hover {
+    opacity: .8;
+  }
+  .eb-btn:active {
+    opacity: .5;
+  }
+  .bp-txtfield {
+    width: 100%;
+    padding: 10px;
+    height: 120px;
+    background: none;
+    color: #34222e;
+    font-size: 1.3rem;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+  }
+  .bp-txtfield::-webkit-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+  }
+  .bp-txtfield:-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+  }
+  .bp-txtfield::-ms-input-placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+  }
+  .bp-txtfield::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+  }
+  .thenotes-container {
+    padding-top: 30px;
+  }
+  .notebx {
+    margin-bottom: 30px;
+  }
+  .note-ttle {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: #34222e;
+  }
+  .note-p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.1rem;
+    color: #3e3636;
+    font-weight: 800;
+  }
 }
 
 .signin-page {

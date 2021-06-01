@@ -17,17 +17,7 @@ return(
 
 
 <div className="profile-body">
-    <div className="profile-left">
-        <div className="image-kunyare">
 
-        </div>
-        <h3 className="profile-name">{converUpperCase(user.result.fullname)}</h3>
-        <div className="task-info-bx">
-            
-            <p className="task-captions">Total Tasks</p>
-            <p className="task-captions">Completed</p>
-        </div>
-    </div>
     <div className="profile-right">
         <p className="what-todo">What Todo Today ?</p>
         <div className="todos">
