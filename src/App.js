@@ -12,6 +12,7 @@ import Notebooks from './components/Notebooks'
 import BookPage from './components/BookPage'
 
 import './styles/styles.css'
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 const App = () => {
 
@@ -47,7 +48,7 @@ return(
 <Route path="/dailytasks" render={renderDaily} />
 <Route path="/notebooks" render={renderBooks} />
 <Route path="/bookpage/:id" render={renderBookPage} />
-
+<Route path="/privacypolicy" component={PrivacyPolicy} />
 
 </Router>
 )

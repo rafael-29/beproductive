@@ -86,12 +86,9 @@ return(
         className={allBooks === undefined ? "hide-menu" : !allBooks.length ? "hide-menu" : "dt-create"}>Create New Book <i className="dtbtn fas fa-plus-circle"></i>
     </button>
     
-
-
     <div className="notebook-inside-page">
     {allBooks === undefined ? <h3 className="load-undef">Loading ...</h3> : !allBooks.length ? renderEmpty() : renderAllBooks()}
     </div>
-
 
     <div className={addWindow ? "newtask-form-cont" : "hide-menu"}>
         <div className="newtask-form">

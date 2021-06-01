@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 
 
@@ -58,7 +59,8 @@ return (
 </div>
 
 <footer>
-    <p className="copyright">copyright beProductive.com 2021</p>
+    <p className="copyright">copyright beProductive 2021</p>
+    <Link to="/privacypolicy" className="policy-cap">Privacy Policy</Link>
 </footer>
 
 </React.Fragment>

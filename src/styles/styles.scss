@@ -1200,3 +1200,72 @@ z-index: 111;
 }
 
 }
+
+// PRIVACY POLICY
+.policy-cap{
+color: #f5f5f5;
+}
+.privacy-policy-page{
+padding: 90px;
+}
+
+.ppcy-h1 {
+font-family: $mons;
+font-size: 2rem;
+margin-bottom: 10px;
+color: $fourth;
+}
+.ppcy-h2{
+font-family: $mons;
+font-size: 1.5rem;
+margin-bottom: 10px;
+color: $fourth;
+opacity: .9;
+}
+
+.ppcy-p{
+opacity: .9;
+font-family: $mons;
+font-weight: 900;
+letter-spacing: 1px;
+margin-bottom: 40px;
+color: $third;
+font-size: 1.1rem;
+}
+.ppcy-ul{
+list-style-type: none;
+margin-bottom: 30px;
+}
+.ppcy-li{
+color: $second;
+font-size: 1.1rem;
+font-family: $mons;
+font-weight: 700;
+margin-bottom: 4px;
+}
+
+@media (max-width: 850px){
+.privacy-policy-page{
+padding: 90px 14px;
+}
+
+.ppcy-h1 {
+font-family: $mons;
+font-size: 1.8rem;
+margin-bottom: 10px;
+color: $fourth;
+}
+.ppcy-h2{
+font-family: $mons;
+font-size: 1.4rem;
+
+}
+
+.ppcy-p{
+font-size: 1rem;
+}
+
+.ppcy-li{
+font-size: 1rem;
+}
+}
