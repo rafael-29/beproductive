@@ -52,6 +52,7 @@ history.push('/')
 
 
 const regData = () => {
+setIsLoading(true)
 const toRegister = {
     fullname: formData.fullname,
     email: formData.email,
@@ -68,9 +69,12 @@ normAPI.post('/users/register', toRegister)
 .then( (results) => {
 localStorage.setItem('profile', JSON.stringify(results.data))
 setUser(JSON.parse(localStorage.getItem('profile')))
+setIsLoading(false)
 history.push('/')
 })
-.catch(err => setErrMessage('Email Already Taken'))
+.catch(err => {
+    setIsLoading(false)
+    setErrMessage('Email Already Taken')})
 
 }
 
@@ -136,11 +140,11 @@ return (
 }
 
 if(isLoading){
-    return(
+return(
 <div className="signin-page">
-    <CircularProgress />
+<CircularProgress />
 </div>
-    )
+)
 }
 
 return (

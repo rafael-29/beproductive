@@ -1,11 +1,13 @@
 import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import {useHistory} from 'react-router-dom'
 import DailyTasks from './DailyTasks'
 
 
 
-const Home = ({user, setUser, deletedNa, setDeletedNa}) => {
+const Home = ({user, setUser, deletedNa}) => {
 
+const history = useHistory()
 
 
 useEffect( () => {
@@ -55,7 +57,8 @@ return (
     <h2 className="oh-bot-cap">
         start making your first task today
     </h2>
-    <button className="oh-bot-btn">Sign Up</button>
+    <button onClick={() => history.push('/register')}
+    className="oh-bot-btn">Sign Up</button>
 </div>
 
 <footer>
