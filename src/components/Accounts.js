@@ -63,6 +63,9 @@ const saveUpdate = async () => {
 if(!updateOpen){
 setUpdateOpen(true)
 }else{
+if(updateInfo.fullname === '' || updateInfo.email === ''){
+return alert('Complete the Form')
+}
 setTheUpdating(true)
 setUpdateOpen(false)
 const {data} = await API.patch('/edituser', updateInfo)
@@ -83,9 +86,13 @@ setTheUpdating(false)
 
 
 const savePasswordNew = async () => {
+
 if(!passOpen){
 setPassOpen(true)
 }else{
+if(cPassword.confirm === '' || cPassword.newpass === '' || cPassword.oldpass === ''){
+    return alert('complete the form')
+}
 setPassOpen(false)
 setTheUpdatingPass(true)
 if(cPassword.confirm !== cPassword.newpass){
