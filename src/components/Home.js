@@ -1,22 +1,22 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import DailyTasks from './DailyTasks'
 
 
 
-import Profile from './Profile'
+const Home = ({user, setUser, deletedNa, setDeletedNa}) => {
 
 
-const Home = ({user, setUser}) => {
 
+useEffect( () => {
+console.log(deletedNa)
+}, [deletedNa] ) 
 
 if(user){
-    return(
-        <Profile user={user} setUser={setUser} />
-    )
+return(
+    <DailyTasks user={user} setUser={setUser} />
+)
 }
-
-
-
 return (
 <React.Fragment>
 

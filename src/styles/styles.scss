@@ -1269,3 +1269,154 @@ font-size: 1rem;
 font-size: 1rem;
 }
 }
+
+// ACCOUNTS STYLE
+.accounts-page{
+padding: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.a-midbx{
+width: 400px;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+flex-direction: column;
+}
+
+.a-top{
+margin-bottom: 23px;
+}
+.a-ttle{
+font-family: $robotothin;
+font-size: 1.7rem;
+color: $third;
+margin-bottom: 15px;
+}
+.a-infobx{
+margin-bottom: 12px;
+}
+.a-label{
+display: inline;
+font-family: $robotothin;
+font-weight: 500;
+font-size: 1rem;
+color: $second;
+}
+.a-name{
+font-family: $mons;
+font-size: 1.2rem;
+font-weight: 500;
+letter-spacing: 1px;
+}
+.a-para{
+font-family: $mons;
+letter-spacing: 1px;
+color: $third;
+margin-bottom: 6px;
+}
+
+.a-btn{
+width: 100%;
+padding: 4px;
+font-family: $mons;
+font-weight: 700;
+font-size: 1.1rem;
+cursor: pointer;
+}
+.delacc{
+border: none;
+margin-top: 10px;
+background-color: crimson;
+color: #f5f5f5;
+border-radius: 5px;
+padding: 10px;
+width: 140px;
+}
+.a-inp{
+display: inline-block;
+width: 100%;
+margin-bottom: 10px;
+padding: 8px;
+font-family: $robotothin;
+font-size: 1.1rem;
+color: $fourth;
+outline: none;
+background: #f5f5f5;
+border: none;
+}
+.a-inp::placeholder{
+font-family: $robotothin;
+font-size: 1.1rem;
+color: $fourth;
+}
+
+.confirm-del{
+border: none;
+margin-top: 10px;
+background-color: $fourth;
+color: #f5f5f5;
+border-radius: 5px;
+padding: 10px;
+width: 140px;
+margin-left: 15px;
+}
+
+.deletion-acc{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: $light;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+@media (max-width:500px) {
+.accounts-page{
+padding: 100px 14px;
+}
+.a-midbx{
+width: 100%;
+}
+}
+
+.sorry-page{
+padding: 100px 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.s-left{
+margin-bottom: 50px;
+}
+.s-right{
+width: 40%;
+.s-img{
+height: 100%;
+width: 100%;
+}
+}
+.s-caption{
+font-family: $robotothin;
+color: $fourth;
+}
+@media (max-width: 700px) {
+.s-right{
+width: 100%;
+.s-img{
+height: 100%;
+width: 100%;
+}
+}
+.sorry-page{
+padding: 100px 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+}

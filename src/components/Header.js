@@ -18,7 +18,7 @@ setMobOpen(!mobOpen)
 const logOutFunc = () => {
 localStorage.removeItem('profile')
 setUser(null)
-history.push('/')
+
 setShowTaskMenu(false)
 setSettingsMenu(false)
 }
@@ -34,7 +34,7 @@ const rProfileMenu = () => (
 <React.Fragment>
     <li className="header-li">
         <button onClick={() => {
-                history.push('/dailytasks')
+                history.push('/')
                 setMobOpen(false)
             }}
          className="profile-btn">Tasks</button>
@@ -54,7 +54,12 @@ const rProfileMenu = () => (
         }}
          className="profile-btn">Settings</button>
         <ul className={settingsMenu ? 'show-settings-menu' : 'hide-menu'}>
-            <li className="profile-li">Accounts</li>
+            <li onClick={() => {
+            history.push('/accounts')
+            setShowTaskMenu(false)
+            setSettingsMenu(false)
+            }}
+             className="profile-li">Accounts</li>
             <li onClick={logOutFunc}
              className="profile-li">Log Out</li>
         </ul>
@@ -92,15 +97,12 @@ className="logo-name">{user ? user.result.fullname.charAt(0).toUpperCase()+user.
     {user ? rProfileMobo() : renderNormalMenu()}
 </ul>
 
-
-
-
 <div className={ mobOpen ? "mobo-down-menu" : "mobo-left-menu"}>
 <img src="./images/myicon.png" alt="beproductive app" className="mobo-logo" />
     <div className="mb-centerbx">
         <li className="header-li-mobo">
         <button onClick={() => {
-                history.push('/dailytasks')
+                history.push('/')
                 setMobOpen(false)
             }}
             className="profile-btn-mobo">Tasks</button>
@@ -123,6 +125,7 @@ className="logo-name">{user ? user.result.fullname.charAt(0).toUpperCase()+user.
         <li className="header-li-mobo">
         <button onClick={() => {
             setMobOpen(false)
+            history.push('/accounts')
         }}
         className="profile-btn-mobo">Accounts</button>
         </li>

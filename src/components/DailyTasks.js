@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import {TextField} from '@material-ui/core'
 
-const DailyTasks = ({user, setUser}) => {
+const DailyTasks = ({user}) => {
 
 const [dailyTasks, setDailyTasks] = useState()
 const [loadWhenCheck, setLoadWhenCheck] = useState(false)
@@ -25,7 +25,7 @@ const fetchDaily = async () => {
 try {
   const results = await API.get('/')
   setDailyTasks(results.data)
-console.log(results.data)
+
 } catch (error) {
     console.log(error)
 }
@@ -102,6 +102,7 @@ const renderEmpty = () => (
     <h2 className="eb-h">No Task As of Now</h2>
     <button onClick={() => setAddWindow(!addWindow)} 
     className="eb-btn">Make New</button>
+    
 </div>
 )
 const renderLoading = () => (

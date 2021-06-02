@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 
@@ -13,13 +13,17 @@ import BookPage from './components/BookPage'
 
 import './styles/styles.css'
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Accounts from './components/Accounts';
+import Sorry from './components/Sorry';
 
 const App = () => {
 
 const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))
 
+const [deletedNa, setDeletedNa] = useState(false)
+
 const renderHome = () => (
-<Home user={user} setUser={setUser} />
+<Home user={user} setUser={setUser} setDeletedNa={setDeletedNa} deletedNa={deletedNa} />
 )
 
 const renderSignin = () => (
@@ -27,7 +31,7 @@ const renderSignin = () => (
 )
 
 const renderDaily = () => (
-<DailyTasks user={user} setUser={setUser} />
+<DailyTasks  setDeletedNa={setDeletedNa} deletedNa={deletedNa}/>
 )
 
 const renderBooks = () => (
@@ -38,6 +42,16 @@ const renderBookPage = (props) => (
 <BookPage theprops={props} />
 )
 
+const renderAcc = () => (
+<Accounts user={user} setUser={setUser} setDeletedNa={setDeletedNa} deletedNa={deletedNa} />
+)
+
+const renderSorry = () => (
+<Sorry deletedNa={deletedNa} setDeletedNa={setDeletedNa} />
+)
+
+
+
 return(
 <Router>
 
@@ -45,10 +59,11 @@ return(
 
 <Route path="/" exact render={renderHome} />
 <Route path="/register" render={renderSignin} />
-<Route path="/dailytasks" render={renderDaily} />
 <Route path="/notebooks" render={renderBooks} />
 <Route path="/bookpage/:id" render={renderBookPage} />
 <Route path="/privacypolicy" component={PrivacyPolicy} />
+<Route path="/accounts" render={renderAcc} />
+<Route path="/farewell" render={renderSorry} />
 
 </Router>
 )
