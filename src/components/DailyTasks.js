@@ -69,7 +69,7 @@ const renderDailyTasks = () => {
             ))}
             </div>
             <div className="addingtaskbx">
-            <input onKeyPress={async e => {
+            <input id="inpaddtxt" onKeyPress={async e => {
             if(e.key === 'Enter'){
             setLoadWhenCheck(!loadWhenCheck)
             await API.post(`/add/${del._id}`, {taskname: e.target.value})
@@ -81,7 +81,16 @@ const renderDailyTasks = () => {
             }
         }}
         type="text" className="insert-task" placeholder="Create New Task"
-            /><button className="addtask-btn"><i className="fas fa-plus"></i></button>
+            /><button onClick={ async e => {
+                const theTextValue = window.document.getElementById('inpaddtxt')
+                setLoadWhenCheck(!loadWhenCheck)
+                await API.post(`/add/${del._id}`, {taskname: theTextValue.value})
+                    
+                await fetchDaily();
+                e.target.value = ""
+                setLoadWhenCheck(false)
+                
+            }} className="addtask-btn"><i className="fas fa-plus"></i></button>
             </div>
             <p onClick={() => deleteWholeDT(del)}
             className="delete-dt-whole">Remove All
@@ -97,6 +106,7 @@ fetchDaily()
 setAddWindow(false)
 setDtName('')
 }
+
 const renderEmpty = () => (
 <div className="empty-book">
     <h2 className="eb-h">No Task As of Now</h2>
