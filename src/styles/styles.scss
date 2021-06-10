@@ -18,7 +18,7 @@ $fourth: #34222e;
 $third: #3e3636;
 $second: #e2434b;
 $first: #f9bf8f;
-$light: #fee9d7;
+$light: #f5f5f5;
 
 body {
   background-color: $light;
@@ -506,7 +506,7 @@ footer {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: $first;
+  background-color: #d1d1d1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,12 +522,12 @@ footer {
 }
 .create-dt-now {
   padding: 7px 8px;
-  background-color: $first;
+  background-color: $third;
   border: none;
   width: 100%;
   font-size: 1.3rem;
   font-family: $mons;
-  color: $third;
+  color: white;
   font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
@@ -1298,7 +1298,7 @@ header {
 }
 .a-name {
   font-family: $mons;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -1335,13 +1335,15 @@ header {
   font-size: 1.1rem;
   color: $fourth;
   outline: none;
-  background: #f5f5f5;
+  background: #e2e2e2;
   border: none;
+  border-radius: 5px;
 }
 .a-inp::placeholder {
   font-family: $robotothin;
   font-size: 1.1rem;
   color: $fourth;
+  font-weight: 300;
 }
 
 .confirm-del {

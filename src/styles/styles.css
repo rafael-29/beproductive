@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #fee9d7;
+  background-color: #f5f5f5;
 }
 
 .logo-name {
@@ -329,7 +329,7 @@ footer .copyright {
 .what-todo {
   font-size: 1.7rem;
   font-family: "Montserrat", sans-serif;
-  color: #fee9d7;
+  color: #f5f5f5;
   margin-bottom: 26px;
 }
 
@@ -353,7 +353,7 @@ footer .copyright {
 .todos-btn {
   font-size: 1.1rem;
   font-family: "Montserrat", sans-serif;
-  color: #fee9d7;
+  color: #f5f5f5;
   background: #e2434b;
   border: none;
   cursor: pointer;
@@ -619,7 +619,7 @@ footer .copyright {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #f9bf8f;
+  background-color: #d1d1d1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,7 +635,7 @@ footer .copyright {
 
 .newtask-form {
   border-radius: 5px;
-  background-color: #fee9d7;
+  background-color: #f5f5f5;
   padding: 15px 10px 20px 10px;
   width: 400px;
   position: relative;
@@ -643,12 +643,12 @@ footer .copyright {
 
 .create-dt-now {
   padding: 7px 8px;
-  background-color: #f9bf8f;
+  background-color: #3e3636;
   border: none;
   width: 100%;
   font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
-  color: #3e3636;
+  color: white;
   font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
@@ -662,7 +662,7 @@ footer .copyright {
   width: 100%;
   font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
-  color: #fee9d7;
+  color: #f5f5f5;
   font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
@@ -1034,7 +1034,7 @@ footer .copyright {
 
 header {
   background-color: #34222e;
-  color: #fee9d7;
+  color: #f5f5f5;
   padding: 7px 50px;
   font-family: "Montserrat", sans-serif;
   display: -webkit-box;
@@ -1068,7 +1068,7 @@ header {
 
 .header-link {
   text-decoration: none;
-  color: #fee9d7;
+  color: #f5f5f5;
   font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
   cursor: pointer;
@@ -1092,7 +1092,7 @@ header {
 .profile-btn {
   font-size: 1.3rem;
   font-family: "Montserrat", sans-serif;
-  color: #fee9d7;
+  color: #f5f5f5;
   background: none;
   border: none;
   cursor: pointer;
@@ -1121,7 +1121,7 @@ header {
           align-items: center;
   padding: 10px 5px;
   background-color: #34222e;
-  color: #fee9d7;
+  color: #f5f5f5;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   position: absolute;
@@ -1160,7 +1160,7 @@ header {
           align-items: center;
   padding: 10px 5px;
   background-color: #34222e;
-  color: #fee9d7;
+  color: #f5f5f5;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   position: absolute;
@@ -1181,7 +1181,7 @@ header {
 @media (max-width: 840px) {
   header {
     background-color: #34222e;
-    color: #fee9d7;
+    color: #f5f5f5;
     padding: 8px 20px 8px 10px;
     font-family: "Montserrat", sans-serif;
     display: -webkit-box;
@@ -1212,7 +1212,7 @@ header {
   }
   .header-link {
     text-decoration: none;
-    color: #fee9d7;
+    color: #f5f5f5;
     font-family: "Montserrat", sans-serif;
     font-size: 1.3rem;
     cursor: pointer;
@@ -1233,7 +1233,7 @@ header {
   .profile-btn {
     font-size: 1.3rem;
     font-family: "Montserrat", sans-serif;
-    color: #fee9d7;
+    color: #f5f5f5;
     background: none;
     border: none;
     cursor: pointer;
@@ -1260,7 +1260,7 @@ header {
             align-items: center;
     padding: 10px 5px;
     background-color: #34222e;
-    color: #fee9d7;
+    color: #f5f5f5;
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     position: absolute;
@@ -1296,7 +1296,7 @@ header {
             align-items: center;
     padding: 10px 5px;
     background-color: #34222e;
-    color: #fee9d7;
+    color: #f5f5f5;
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;
     position: absolute;
@@ -1428,7 +1428,7 @@ header {
     width: 35px;
     height: 4px;
     border-radius: 5px;
-    background-color: #fee9d7;
+    background-color: #f5f5f5;
     position: absolute;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -1439,7 +1439,7 @@ header {
     width: 35px;
     height: 4px;
     border-radius: 5px;
-    background-color: #fee9d7;
+    background-color: #f5f5f5;
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
     -webkit-transition: 0.5s;
@@ -1451,7 +1451,7 @@ header {
     width: 26px;
     height: 4px;
     border-radius: 5px;
-    background-color: #fee9d7;
+    background-color: #f5f5f5;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
     -webkit-transition: 0.5s;
@@ -1633,7 +1633,7 @@ header {
 
 .a-name {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 1px;
 }
@@ -1673,32 +1673,37 @@ header {
   font-size: 1.1rem;
   color: #34222e;
   outline: none;
-  background: #f5f5f5;
+  background: #e2e2e2;
   border: none;
+  border-radius: 5px;
 }
 
 .a-inp::-webkit-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   color: #34222e;
+  font-weight: 300;
 }
 
 .a-inp:-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   color: #34222e;
+  font-weight: 300;
 }
 
 .a-inp::-ms-input-placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   color: #34222e;
+  font-weight: 300;
 }
 
 .a-inp::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 1.1rem;
   color: #34222e;
+  font-weight: 300;
 }
 
 .confirm-del {
@@ -1718,7 +1723,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fee9d7;
+  background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

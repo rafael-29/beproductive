@@ -6,14 +6,14 @@ import axios from 'axios'
 
 
 
-const Signin = ({user, setUser}) => {
+const Signin = ({user, setUser, sign, setSign}) => {
 
 const history = useHistory()
 const normAPI = axios.create({
 baseURL: 'https://beproductive-api.herokuapp.com'
 })
 
-const [sign, setSign] = useState(true)
+
 const [errMessage, setErrMessage] = useState()
 const [isLoading, setIsLoading] = useState(false)
 

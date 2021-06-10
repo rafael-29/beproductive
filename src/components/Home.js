@@ -5,7 +5,7 @@ import DailyTasks from './DailyTasks'
 
 
 
-const Home = ({user, setUser, deletedNa}) => {
+const Home = ({user, setUser, deletedNa, sign, setSign}) => {
 
 const history = useHistory()
 
@@ -57,7 +57,10 @@ return (
     <h2 className="oh-bot-cap">
         start making your first task today
     </h2>
-    <button onClick={() => history.push('/register')}
+    <button onClick={() => {
+    history.push('/register')
+    setSign(!sign)
+    }}
     className="oh-bot-btn">Sign Up</button>
 </div>
 

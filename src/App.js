@@ -19,15 +19,16 @@ import Sorry from './components/Sorry';
 const App = () => {
 
 const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))
-
+const [sign, setSign] = useState(true)
 const [deletedNa, setDeletedNa] = useState(false)
 
 const renderHome = () => (
-<Home user={user} setUser={setUser} setDeletedNa={setDeletedNa} deletedNa={deletedNa} />
+<Home user={user} setUser={setUser} setDeletedNa={setDeletedNa} deletedNa={deletedNa}
+sign={sign} setSign={setSign} />
 )
 
 const renderSignin = () => (
-<Signin user={user} setUser={setUser} />
+<Signin user={user} setUser={setUser} sign={sign} setSign={setSign} />
 )
 
 const renderDaily = () => (

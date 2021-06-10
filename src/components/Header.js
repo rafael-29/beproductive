@@ -117,13 +117,6 @@ className="logo-name">{user ? user.result.fullname.charAt(0).toUpperCase()+user.
         
         <li className="header-li-mobo">
         <button onClick={() => {
-        setMobOpen(false)
-        }}
-            className="profile-btn-mobo">Settings</button>
-
-        </li>
-        <li className="header-li-mobo">
-        <button onClick={() => {
             setMobOpen(false)
             history.push('/accounts')
         }}
