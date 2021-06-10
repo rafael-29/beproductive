@@ -62,7 +62,7 @@ body {
   color: #34222e;
   font-weight: 700;
   width: 700px;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .orig-home-mid {
@@ -177,7 +177,7 @@ footer .copyright {
     color: #34222e;
     font-weight: 700;
     width: 500px;
-    opacity: .9;
+    opacity: 0.9;
   }
 }
 
@@ -199,7 +199,7 @@ footer .copyright {
     color: #34222e;
     font-weight: 600;
     width: 100%;
-    opacity: .9;
+    opacity: 0.9;
   }
   .orig-home-mid {
     display: -webkit-box;
@@ -227,7 +227,7 @@ footer .copyright {
     color: #34222e;
     font-weight: 800;
     letter-spacing: 1px;
-    opacity: .9;
+    opacity: 0.9;
   }
   .oh-left {
     width: 100%;
@@ -359,8 +359,8 @@ footer .copyright {
   cursor: pointer;
   padding: 9px 12px;
   border-radius: 15px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   margin-bottom: 10px;
 }
 
@@ -438,7 +438,7 @@ footer .copyright {
 }
 
 .task-name-green {
-  color: lime;
+  color: #83e85a;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   cursor: pointer;
@@ -457,16 +457,16 @@ footer .copyright {
 }
 
 .checktrue {
-  border: 1px solid lime;
+  border: 1px solid #83e85a;
 }
 
 .checktrue::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 30px;
   width: 16px;
-  border-bottom: 3px solid lime;
-  border-right: 3px solid lime;
+  border-bottom: 3px solid #83e85a;
+  border-right: 3px solid #83e85a;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   left: 6px;
@@ -480,11 +480,11 @@ footer .copyright {
 
 .load-check {
   position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  height: 80px;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,14 +495,44 @@ footer .copyright {
       -ms-flex-align: center;
           align-items: center;
   z-index: 13;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .load-cap {
-  font-size: 1.7rem;
-  color: lime;
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: #3e3636;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  .load-check {
+    position: absolute;
+    height: 60px;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    background-color: #f5f5f5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    z-index: 13;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .load-cap {
+    font-size: 1.5rem;
+    color: #3e3636;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
 }
 
 .addingtaskbx {
@@ -564,18 +594,18 @@ footer .copyright {
   background-color: #e2434b;
   cursor: pointer;
   color: white;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .dt-create:hover {
-  opacity: .9;
-  -webkit-transition: .3s;
-  transition: .3s;
+  opacity: 0.9;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .dt-create:active {
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .dtbtn {
@@ -639,8 +669,9 @@ footer .copyright {
   margin-bottom: 6px;
 }
 
-.create-dt-cancel:active, .create-dt-now:active {
-  opacity: .7;
+.create-dt-cancel:active,
+.create-dt-now:active {
+  opacity: 0.7;
 }
 
 .dt-label {
@@ -744,7 +775,7 @@ footer .copyright {
 .bookcontent-page .bp-title {
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  font-weight: 7  00;
+  font-weight: 7 00;
   font-size: 2.3rem;
   margin-bottom: 30px;
   color: #34222e;
@@ -789,11 +820,11 @@ footer .copyright {
 }
 
 .eb-btn:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .eb-btn:active {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .bp-txtfield {
@@ -864,11 +895,11 @@ footer .copyright {
 }
 
 .addnew-txt:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .addnew-txt:active {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 @media (max-width: 840px) {
@@ -892,10 +923,10 @@ footer .copyright {
     cursor: pointer;
   }
   .eb-btn:hover {
-    opacity: .8;
+    opacity: 0.8;
   }
   .eb-btn:active {
-    opacity: .5;
+    opacity: 0.5;
   }
   .empty-book .eb-h {
     font-size: 1.7rem;
@@ -984,7 +1015,7 @@ footer .copyright {
   font-size: 45rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  opacity: .2;
+  opacity: 0.2;
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
   left: -220px;
@@ -1043,15 +1074,15 @@ header {
   cursor: pointer;
   padding: 9px 12px;
   border-radius: 5px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header-link:hover {
   background: rgba(255, 255, 255, 0.89);
   color: #34222e;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header-li {
@@ -1067,15 +1098,15 @@ header {
   cursor: pointer;
   padding: 9px 12px;
   border-radius: 5px;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .profile-btn:hover {
   background: rgba(255, 255, 255, 0.89);
   color: #34222e;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .show-task-menu {
@@ -1113,8 +1144,8 @@ header {
 .profile-li:hover {
   background: rgba(255, 255, 255, 0.89);
   color: #34222e;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .show-settings-menu {
@@ -1187,14 +1218,14 @@ header {
     cursor: pointer;
     padding: 9px 12px;
     border-radius: 5px;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .header-link:hover {
     background: rgba(255, 255, 255, 0.89);
     color: #34222e;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .header-li {
     position: relative;
@@ -1208,14 +1239,14 @@ header {
     cursor: pointer;
     padding: 9px 12px;
     border-radius: 5px;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .profile-btn:hover {
     background: rgba(255, 255, 255, 0.89);
     color: #34222e;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .show-task-menu {
     display: -webkit-box;
@@ -1250,8 +1281,8 @@ header {
   .profile-li:hover {
     background: rgba(255, 255, 255, 0.89);
     color: #34222e;
-    -webkit-transition: .3s;
-    transition: .3s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   .show-settings-menu {
     display: -webkit-box;
@@ -1306,8 +1337,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .mobo-logo {
@@ -1339,8 +1370,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header-li-mobo {
@@ -1390,8 +1421,8 @@ header {
             align-items: center;
     cursor: pointer;
     z-index: 97;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .mobobx-line {
     width: 35px;
@@ -1399,11 +1430,11 @@ header {
     border-radius: 5px;
     background-color: #fee9d7;
     position: absolute;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .mobobx-line::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 35px;
     height: 4px;
@@ -1411,11 +1442,11 @@ header {
     background-color: #fee9d7;
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .mobobx-line::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 26px;
     height: 4px;
@@ -1423,8 +1454,8 @@ header {
     background-color: #fee9d7;
     -webkit-transform: translateY(10px);
             transform: translateY(10px);
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .mobo-box-open {
     position: relative;
@@ -1440,19 +1471,19 @@ header {
         -ms-flex-align: center;
             align-items: center;
     cursor: pointer;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     z-index: 99;
   }
   .mobo-box-open .mobobx-line {
     -webkit-transform: translateX(-40px);
             transform: translateX(-40px);
     background: transparent;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .mobo-box-open .mobobx-line::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 35px;
     height: 4px;
@@ -1460,12 +1491,12 @@ header {
     background-color: #34222e;
     -webkit-transform: translate(40px, 0) rotate(-45deg);
             transform: translate(40px, 0) rotate(-45deg);
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     z-index: 111;
   }
   .mobo-box-open .mobobx-line::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 35px;
     height: 4px;
@@ -1473,8 +1504,8 @@ header {
     background-color: #34222e;
     -webkit-transform: translate(40px, 0) rotate(45deg);
             transform: translate(40px, 0) rotate(45deg);
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
     z-index: 111;
   }
 }
@@ -1499,11 +1530,11 @@ header {
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: #34222e;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .ppcy-p {
-  opacity: .9;
+  opacity: 0.9;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   letter-spacing: 1px;
