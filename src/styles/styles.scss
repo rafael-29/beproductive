@@ -112,7 +112,7 @@ body {
   border: none;
   border-radius: 10px;
   padding: 8px 0 9px 0;
-  background-color: $first;
+  background-color: $fourth;
   color: white;
   font-family: $mons;
   font-weight: 600;
@@ -120,8 +120,7 @@ body {
   cursor: pointer;
 }
 .oh-bot-btn:hover {
-  background-color: $fourth;
-  color: $first;
+  background-color: $second;
 }
 footer {
   text-align: center;
@@ -240,7 +239,7 @@ footer {
     border: none;
     border-radius: 10px;
     padding: 7px 0 8px 0;
-    background-color: $first;
+    background-color: $fourth;
     color: white;
     font-family: $mons;
     font-weight: 600;
@@ -249,8 +248,7 @@ footer {
     text-align: center;
   }
   .oh-bot-btn:hover {
-    background-color: $fourth;
-    color: $first;
+    background-color: $second;
   }
   footer {
     text-align: center;

@@ -126,7 +126,7 @@ body {
   border: none;
   border-radius: 10px;
   padding: 8px 0 9px 0;
-  background-color: #f9bf8f;
+  background-color: #34222e;
   color: white;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
@@ -135,8 +135,7 @@ body {
 }
 
 .oh-bot-btn:hover {
-  background-color: #34222e;
-  color: #f9bf8f;
+  background-color: #e2434b;
 }
 
 footer {
@@ -262,7 +261,7 @@ footer .copyright {
     border: none;
     border-radius: 10px;
     padding: 7px 0 8px 0;
-    background-color: #f9bf8f;
+    background-color: #34222e;
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -271,8 +270,7 @@ footer .copyright {
     text-align: center;
   }
   .oh-bot-btn:hover {
-    background-color: #34222e;
-    color: #f9bf8f;
+    background-color: #e2434b;
   }
   footer {
     text-align: center;
