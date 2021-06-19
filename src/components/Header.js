@@ -49,6 +49,14 @@ const rProfileMenu = () => (
     </li>
     <li className="header-li">
         <button onClick={() => {
+        history.push('/getadvice')
+        setMobOpen(false)
+    }}
+         className="profile-btn">Advice</button>
+        
+    </li>
+    <li className="header-li">
+        <button onClick={() => {
             setSettingsMenu(!settingsMenu)
             setMobOpen(false)
         }}
@@ -121,6 +129,13 @@ className="logo-name">{user ? user.result.fullname.charAt(0).toUpperCase()+user.
             history.push('/accounts')
         }}
         className="profile-btn-mobo">Accounts</button>
+        </li>
+        <li className="header-li-mobo">
+        <button onClick={() => {
+            setMobOpen(false)
+            history.push('/getadvice')
+        }}
+        className="profile-btn-mobo">Random Advice</button>
         </li>
         <li className="header-li-mobo">
         <button onClick={() => {

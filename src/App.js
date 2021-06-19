@@ -1,15 +1,16 @@
-import React, {useState, useEffect} from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import React, {useState} from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 
 
 //components
-import Home from './components/Home'
+import Home from './components/Home';
 import Signin from './components/Signin.js';
 import DailyTasks from './components/DailyTasks';
-import Header from './components/Header'
-import Notebooks from './components/Notebooks'
-import BookPage from './components/BookPage'
+import Header from './components/Header';
+import Notebooks from './components/Notebooks';
+import BookPage from './components/BookPage';
+import GetAdvice from './components/getAdvice';
 
 import './styles/styles.css'
 import PrivacyPolicy from './components/PrivacyPolicy';
@@ -50,7 +51,9 @@ const renderAcc = () => (
 const renderSorry = () => (
 <Sorry deletedNa={deletedNa} setDeletedNa={setDeletedNa} />
 )
-
+const renderAdvicePage = () => (
+<GetAdvice user={user} setUser={setUser}  />
+)
 
 
 return(
@@ -65,6 +68,7 @@ return(
 <Route path="/privacypolicy" component={PrivacyPolicy} />
 <Route path="/accounts" render={renderAcc} />
 <Route path="/farewell" render={renderSorry} />
+<Route path="/getadvice" render={renderAdvicePage} />
 
 </Router>
 )
