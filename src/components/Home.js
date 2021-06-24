@@ -1,18 +1,13 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import {Link} from 'react-router-dom'
 import {useHistory} from 'react-router-dom'
 import DailyTasks from './DailyTasks'
 
 
 
-const Home = ({user, setUser, deletedNa, sign, setSign}) => {
+const Home = ({user, setUser, sign, setSign}) => {
 
 const history = useHistory()
-
-
-useEffect( () => {
-console.log(deletedNa)
-}, [deletedNa] ) 
 
 if(user){
 return(

@@ -21,6 +21,7 @@ setUser(null)
 
 setShowTaskMenu(false)
 setSettingsMenu(false)
+
 }
 const renderNormalMenu = () => (
 <React.Fragment>
@@ -87,11 +88,16 @@ const rProfileMobo = () => (
 useEffect( () => {
 let theWhole = window.document.querySelector('body')
 if(!mobOpen){
-theWhole.style.overflow = "scroll"
+theWhole.style.overflow = "scroll";
+theWhole.style.overflowX = "hidden";
 }else{
 theWhole.style.overflow = "hidden"
+theWhole.style.overflowX = "hidden";
 }
 }, [mobOpen])
+
+
+
 return (
 <header className={user ? '' : 'headerBig'}>
 <h2 onClick={e => history.push('/')} style={{cursor: 'pointer'}}

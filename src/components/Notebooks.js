@@ -5,7 +5,7 @@ import axios from 'axios'
 
 
 
-const Notebooks = () => {
+const Notebooks = ({user, setUser}) => {
 
 const history = useHistory()
 const [allBooks, setAllBooks] = useState()
@@ -27,7 +27,7 @@ return req
 const fetchUserNotes = async () => {
 const { data } = await API.get('/usernotes')
 setAllBooks(data)
-console.log(data)
+
 }
 
 const createNewBook = () => {
@@ -72,9 +72,23 @@ const renderEmpty = () => (
 </div>
 )
 
+const renderBackHome = () => {
+    history.push('/')
+}
+
 useEffect( () => {
 fetchUserNotes()
 }, [])
+
+if(!user){
+  return  (
+        <div className="notebook-page">
+            <h2 className="load-cap">User Not Log In</h2>
+            {renderBackHome()}
+        </div>
+    )
+}
+
 return(
 <div className="notebook-page">
 

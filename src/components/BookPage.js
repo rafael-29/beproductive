@@ -1,11 +1,12 @@
-import React, {useState, useEffect} from 'react'
-import {TextField} from '@material-ui/core'
-import axios from 'axios'
+import React, {useState, useEffect} from 'react';
+import {useHistory} from 'react-router-dom';
+import {TextField} from '@material-ui/core';
+import axios from 'axios';
 
 
 
-const BookPage = ({theprops}) => {
-
+const BookPage = ({theprops, user}) => {
+const history = useHistory();
 const API = axios.create({
 baseURL: 'https://beproductive-api.herokuapp.com/notes'
 })
@@ -74,9 +75,23 @@ const renderNotes = () => {
     )
 }
 
+const renderBackHome = () => {
+    history.push('/');
+}
+
 useEffect( () => {
     fetchBook()
 }, [])
+
+if(!user){
+    return  (
+          <div className="notebook-page">
+              <h2 className="load-cap">User Not Log In</h2>
+              {renderBackHome()}
+          </div>
+      )
+  }
+
 return (
 <div className="bookcontent-page">
     

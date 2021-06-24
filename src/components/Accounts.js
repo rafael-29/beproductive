@@ -5,7 +5,7 @@ import axios from 'axios'
 
 
 
-const Accounts = ({user, setUser, setDeletedNa, deletedNa}) => {
+const Accounts = ({user, setUser, setDeletedNa}) => {
 
 const history = useHistory()
 
@@ -128,10 +128,6 @@ history.push('/farewell')
 localStorage.removeItem('profile')
 setUser(JSON.parse(localStorage.getItem('profile')))
 }
-
-useEffect( () => {
-console.log(deletedNa)
-}, [deletedNa])
 
 if(!user){
 return <h2>You Must be Logged In</h2>

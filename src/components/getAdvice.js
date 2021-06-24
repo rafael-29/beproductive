@@ -5,8 +5,8 @@ import {useHistory} from 'react-router-dom'
 
 import {ranQ} from '../thirdApis/randomquotes.js' 
 
-const GetAdvice = ({user, setUser}) => {
-
+const GetAdvice = ({user}) => {
+const history = useHistory();
 const [advice, setAdvice] = useState('')
 
 const fetchAdvice = () => {
@@ -27,6 +27,11 @@ const renderAd = () => (
 useEffect( () => {
     fetchAdvice();
 }, [])
+
+if(!user){
+  return history.push('/')
+}
+
 return(
 <Container maxWidth="sm" style={{
 marginTop: '140px'

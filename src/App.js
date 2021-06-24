@@ -32,16 +32,12 @@ const renderSignin = () => (
 <Signin user={user} setUser={setUser} sign={sign} setSign={setSign} />
 )
 
-const renderDaily = () => (
-<DailyTasks  setDeletedNa={setDeletedNa} deletedNa={deletedNa}/>
-)
-
 const renderBooks = () => (
-<Notebooks />
+<Notebooks user={user} setUser={setUser} />
 )
 
 const renderBookPage = (props) => (
-<BookPage theprops={props} />
+<BookPage user={user} setUser={setUser} theprops={props} />
 )
 
 const renderAcc = () => (
