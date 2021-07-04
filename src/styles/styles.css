@@ -504,6 +504,22 @@ footer .copyright {
   font-weight: 500;
 }
 
+@media (max-width: 800px) {
+  .daily-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 70px 50px;
+    gap: 40px;
+  }
+}
+
 @media (max-width: 500px) {
   .load-check {
     position: absolute;

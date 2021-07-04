@@ -79,18 +79,19 @@ const renderDailyTasks = () => {
             setLoadWhenCheck(false)
             
             }
-        }}
-        type="text" className="insert-task" placeholder="Create New Task"
-            /><button onClick={ async e => {
-                const theTextValue = window.document.getElementById('inpaddtxt')
+            }}
+            type="text" className="insert-task" placeholder="Create New Task"/>
+            <button onClick={ async e => {
+                const inputValue = e.target.parentElement.children[0].value;
+            
                 setLoadWhenCheck(!loadWhenCheck)
-                await API.post(`/add/${del._id}`, {taskname: theTextValue.value})
+                await API.post(`/add/${del._id}`, {taskname: inputValue})
                     
                 await fetchDaily();
-                e.target.value = ""
+                e.target.parentElement.children[0].value = ""
                 setLoadWhenCheck(false)
                 
-            }} className="addtask-btn"><i className="fas fa-plus"></i></button>
+            }} className="addtask-btn"><i style={{pointerEvents: 'none'}} className="fas fa-plus"></i></button>
             </div>
             <p onClick={() => deleteWholeDT(del)}
             className="delete-dt-whole">Remove All

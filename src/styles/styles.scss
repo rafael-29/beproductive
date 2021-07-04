@@ -412,6 +412,15 @@ footer {
   font-family: $robotothin;
   font-weight: 500;
 }
+@media (max-width: 800px) {
+  .daily-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 70px 50px;
+    gap: 40px;
+  }
+}
 @media (max-width: 500px) {
   .load-check {
     position: absolute;
