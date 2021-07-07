@@ -743,6 +743,15 @@ footer {
 
 @media (max-width: 840px) {
   // Bookpage
+  .book-page-backBtn {
+    position: fixed;
+    top: 9%;
+    left: 2%;
+    font-family: $mons;
+    text-decoration: none;
+    color: $fourth;
+    font-size: 1.5rem;
+  }
   .bookcontent-page {
     padding: 60px 20px;
   }

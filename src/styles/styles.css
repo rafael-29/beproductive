@@ -937,6 +937,15 @@ footer .copyright {
 }
 
 @media (max-width: 840px) {
+  .book-page-backBtn {
+    position: fixed;
+    top: 9%;
+    left: 2%;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #34222e;
+    font-size: 1.5rem;
+  }
   .bookcontent-page {
     padding: 60px 20px;
   }
