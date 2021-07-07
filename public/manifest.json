@@ -1,0 +1,24 @@
+{
+    "name": "be Productive",
+    "short_name": "be",
+    "start_url": ".",
+    "description": "saves a list of task for everyday reminder",
+    "theme_color": "#f5f5f5",
+    "background_color": "#f5f5f5",
+    "icons": [
+        {
+            "src": "/images/myicon.png",
+            "sizes": "184x176",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/images/bigicon.png",
+            "sizes": "600x600",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "orientation": "any",
+    "display": "standalone"
+}
