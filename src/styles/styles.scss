@@ -417,8 +417,9 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 70px 50px;
-    gap: 40px;
+    flex-direction: column-reverse;
+    padding: 70px 20px;
+    gap: 35px;
   }
 }
 @media (max-width: 500px) {
@@ -689,6 +690,19 @@ footer {
   font-size: 1.2rem;
 }
 // INSIDE NOTES BOOKPAGE
+.book-page-backBtn {
+  position: fixed;
+  top: 10%;
+  left: 2%;
+  font-family: $mons;
+  text-decoration: none;
+  color: $fourth;
+  font-size: 1.5rem;
+}
+.fa-caret-left {
+  font-size: 2rem;
+  transform: translateY(3px);
+}
 .thenotes-container {
   padding-top: 50px;
 }

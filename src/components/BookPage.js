@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {useHistory} from 'react-router-dom';
+import {useHistory, Link} from 'react-router-dom';
 import {TextField} from '@material-ui/core';
 import axios from 'axios';
 
@@ -61,6 +61,7 @@ const renderNotes = () => {
     return (
         <React.Fragment>
         <div className="thenotes-container">
+            <Link to="/notebooks" className="book-page-backBtn"><i class="fas fa-caret-left"></i>Return</Link>
             {allContent.map(cont => (
             <div className="notebx" key={cont._id}>
                 <h3 className="note-ttle">{cont.title}</h3>

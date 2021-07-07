@@ -515,8 +515,12 @@ footer .copyright {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 70px 50px;
-    gap: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 70px 20px;
+    gap: 35px;
   }
 }
 
@@ -870,6 +874,22 @@ footer .copyright {
 .bp-txtfield::placeholder {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
+}
+
+.book-page-backBtn {
+  position: fixed;
+  top: 10%;
+  left: 2%;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: #34222e;
+  font-size: 1.5rem;
+}
+
+.fa-caret-left {
+  font-size: 2rem;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
 }
 
 .thenotes-container {

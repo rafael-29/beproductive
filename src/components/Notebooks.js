@@ -73,7 +73,7 @@ const renderEmpty = () => (
 )
 
 const renderBackHome = () => {
-    history.push('/')
+    
 }
 
 useEffect( () => {
@@ -81,12 +81,13 @@ fetchUserNotes()
 }, [])
 
 if(!user){
-  return  (
-        <div className="notebook-page">
-            <h2 className="load-cap">User Not Log In</h2>
-            {renderBackHome()}
-        </div>
-    )
+//   return  (
+//         <div className="notebook-page">
+//             <h2 className="load-cap">User Not Log In</h2>
+//             {renderBackHome()}
+//         </div>
+//     )
+history.push('/')
 }
 
 return(
