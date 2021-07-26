@@ -321,11 +321,15 @@ footer {
 /// DAILY TASKS CHECKBOX
 .daily-container {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: flex-end;
   padding: 70px 50px;
   gap: 40px;
-  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+}
+.dt-minibx {
+  width: 40%;
 }
 
 .real-dt {
@@ -415,11 +419,15 @@ footer {
 @media (max-width: 800px) {
   .daily-container {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
     padding: 70px 20px;
-    gap: 35px;
+    gap: 34px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+  }
+  .dt-minibx {
+    width: 100%;
   }
 }
 @media (max-width: 500px) {

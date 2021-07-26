@@ -6,7 +6,6 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 //components
 import Home from './components/Home';
 import Signin from './components/Signin.js';
-import DailyTasks from './components/DailyTasks';
 import Header from './components/Header';
 import Notebooks from './components/Notebooks';
 import BookPage from './components/BookPage';

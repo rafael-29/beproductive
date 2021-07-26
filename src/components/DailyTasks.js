@@ -55,7 +55,7 @@ setLoadWhenCheck(false)
 const renderDailyTasks = () => {
  
     return dailyTasks.map(del => (
-        <div key={del._id}>
+        <div key={del._id} className="dt-minibx">
             <h4 className="dt-realname">{del.name}</h4>
             <div className="small-dt-container">
             {del.dtask.map(task => (
